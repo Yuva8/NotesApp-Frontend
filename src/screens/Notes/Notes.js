@@ -95,7 +95,7 @@ const Notes = ({ search }) => {
                 >
                   {note.title}
                 </Typography>
-                <Button variant="outline-dark" href={`/note/${note._id}`}>
+                <Button variant="outline-dark" href={`https://roaring-faloodeh-ccdfde.netlify.app/note/${note._id}`}>
                   Edit
                 </Button>
 
