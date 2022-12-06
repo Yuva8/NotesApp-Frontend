@@ -36,7 +36,7 @@ function SingleNote() {
   useEffect(() => {
     const fetching = async () => {
       const { data } = await axios.get(
-        `https://notesapp-yuvi.herokuapp.com/api/notes/${params.id}`
+        `https://yuvinotesapp-backend.onrender.com/api/notes/${params.id}`
       );
 
       setTitle(data.title);
