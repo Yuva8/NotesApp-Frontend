@@ -31,7 +31,7 @@ export const listNotes = () => async (dispatch, getState) => {
     };
 
     const { data } = await axios.get(
-      `https://notesapp-yuvi.herokuapp.com/api/notes`,
+      `https://yuvinotesapp-backend.onrender.com/api/notes`,
       config
     );
 
@@ -70,7 +70,7 @@ export const createNoteAction =
       };
 
       const { data } = await axios.post(
-        `https://notesapp-yuvi.herokuapp.com/api/notes/create`,
+        `https://yuvinotesapp-backend.onrender.com/api/notes/create`,
         { title, content, category },
         config
       );
@@ -110,7 +110,7 @@ export const updateNoteAction =
       };
 
       const { data } = await axios.put(
-        `https://notesapp-yuvi.herokuapp.com/api/notes/${id}`,
+        `https://yuvinotesapp-backend.onrender.com/api/notes/${id}`,
         { title, content, category },
         config
       );
@@ -148,7 +148,7 @@ export const deleteNoteAction = (id) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.delete(
-      `https://notesapp-yuvi.herokuapp.com/api/notes/${id}`,
+      `https://yuvinotesapp-backend.onrender.com/api/notes/${id}`,
       config
     );
 
