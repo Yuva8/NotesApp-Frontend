@@ -23,7 +23,7 @@ export const login = (email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://notesapp-yuvi.herokuapp.com/api/users/login",
+      "https://yuvinotesapp-backend.onrender.com/api/users/login",
       { email, password },
       config
     );
@@ -53,7 +53,7 @@ export const register = (name, pic, email, password) => async (dispatch) => {
     };
 
     const { data } = await axios.post(
-      "https://notesapp-yuvi.herokuapp.com/api/users",
+      "https://yuvinotesapp-backend.onrender.com/api/users",
       { name, pic, email, password },
       config
     );
@@ -95,7 +95,7 @@ export const updateProfile = (user) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.post(
-      "https://notesapp-yuvi.herokuapp.com/api/users/profile",
+      "https://yuvinotesapp-backend.onrender.com/api/users/profile",
       user,
       config
     );
